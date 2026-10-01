@@ -6,6 +6,8 @@ import BadgeIcon from '../components/BadgeIcon.jsx';
 import { Google, Fire, Bolt, Heart, Trophy, Book, Target } from '../components/Icons.jsx';
 import { UNITS, FLAT } from '../data/curriculum.js';
 import { BADGES } from '../data/badges.js';
+import Tutorial from '../components/Tutorial.jsx';
+import { TUTORIAL } from '../data/tutorial.js';
 import { sfx } from '../lib/sound.js';
 
 const TOTAL_SOAL = FLAT.reduce((n, f) => n + f.l.soal.length, 0);
@@ -45,6 +47,7 @@ export default function Landing() {
           <h1>Belajar ngoding lima menit sehari, bareng <em>Bito</em>.</h1>
           <p className="lede">Kuasai algoritma dasar Python dari variabel sampai perulangan. Pelajarannya pendek, soalnya seperti permainan, dan setiap hari belajar menjaga api streak-mu tetap menyala.</p>
           <Cta />
+          <a className="tut-link" href="#cara-pakai" onClick={(e) => { e.preventDefault(); sfx.tap(); document.getElementById('cara-pakai')?.scrollIntoView({ behavior: 'smooth' }); }}>Lihat cara memakainya ↓</a>
           {error && <p className="error">{error}</p>}
           <ul className="hero-facts">
             <li><b>{UNITS.length}</b> unit</li>
@@ -93,6 +96,12 @@ export default function Landing() {
             </li>
           ))}
         </ol>
+      </section>
+
+      <section className="lsec" id="cara-pakai">
+        <h2>Cara memakai Ngulik!</h2>
+        <p className="sub">Ikuti {TUTORIAL.length} langkah ini dari masuk sampai mengumpulkan lencana.</p>
+        <Tutorial />
       </section>
 
       <section className="lsec how">

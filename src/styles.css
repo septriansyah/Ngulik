@@ -361,11 +361,27 @@ pre.code.small { font-size: 13px; padding: 10px 12px; }
 .final p { color: var(--muted); margin: 0 0 18px; font-size: 18px; }
 .lfoot { text-align: center; color: var(--muted); font-size: 13px; padding: 30px 20px 40px; border-top: 2px solid var(--line); margin-top: 30px; }
 
+.tut-link { display: inline-block; margin-top: 14px; font-weight: 700; color: var(--brand-deep); text-decoration: none; border-bottom: 2px solid var(--accent); }
+.tut { list-style: none; counter-reset: t; padding: 0; margin: 26px 0 0; display: grid; gap: 22px; }
+.tut li { counter-increment: t; display: grid; grid-template-columns: 1fr 240px; gap: 28px; align-items: center; background: var(--surface); border: 2px solid var(--line); border-radius: 22px; padding: 22px; }
+.tut li:nth-child(even) { grid-template-columns: 240px 1fr; }
+.tut li:nth-child(even) .tut-copy { order: 2; }
+.tut-copy h3 { font-family: var(--display); font-size: 24px; margin: 0 0 6px; }
+.tut-copy h3::before { content: counter(t); display: inline-grid; place-items: center; width: 34px; height: 34px; margin-right: 10px; border-radius: 50%; background: var(--accent); color: var(--accent-ink); font-size: 18px; vertical-align: 2px; }
+.tut-copy p { margin: 0; color: var(--muted); }
+.tut-shot { margin: 0; }
+.tut-shot img, .tut-ph { display: block; width: 100%; aspect-ratio: 9 / 16; object-fit: cover; border-radius: 18px; border: 2px solid var(--line); background: var(--bg); }
+.tut-ph { display: grid; place-items: center; text-align: center; padding: 12px; border-style: dashed; color: var(--muted); font-size: 13px; font-weight: 600; word-break: break-all; }
+.tut-shot figcaption { margin-top: 8px; font-size: 13px; color: var(--muted); text-align: center; }
+
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; gap: 24px; }
   .hero-art { min-height: 400px; }
   .feat-grid { grid-template-columns: 1fr 1fr; }
   .how-steps { grid-template-columns: 1fr; }
+  .tut li, .tut li:nth-child(even) { grid-template-columns: 1fr; }
+  .tut li:nth-child(even) .tut-copy { order: 0; }
+  .tut-shot { max-width: 260px; margin: 0 auto; }
 }
 @media (max-width: 560px) {
   .feat-grid { grid-template-columns: 1fr; }
