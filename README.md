@@ -18,6 +18,12 @@ Totalnya 35 pelajaran dan 210 soal dengan enam bentuk: pilihan ganda, tebak kelu
 
 Semua materi ada di `src/data/curriculum.js`. Guru bisa menambah atau mengubah soal langsung di file itu.
 
+## Cara memakai
+
+Langkah penggunaan untuk siswa (masuk, peta belajar, soal, XP dan streak, lencana) ada di [PANDUAN.md](PANDUAN.md) dan tampil juga di landing page pada bagian **Cara memakai Ngulik!**.
+
+Screenshot panduan disimpan di `public/tutorial/` dengan nama `langkah-1-masuk.png` sampai `langkah-8-menu.png` (disarankan 1080 × 1920 px, PNG). Teks langkah ada di `src/data/tutorial.js`. Daftar lengkap file dan keterangan gambar ada di PANDUAN.md.
+
 ## Menjalankan di komputer
 
 Butuh Node.js 18 atau lebih baru.
@@ -66,6 +72,7 @@ src/
   lib/sound.js          efek suara (Web Audio, tanpa file audio)
   context/AppContext.jsx  login, penyimpanan progres, papan peringkat
   components/           Bito, lencana, soal interaktif, kerangka aplikasi
+  data/tutorial.js      langkah cara memakai (landing page)
   pages/                Landing, Peta Belajar, Pelajaran, Panduan, Peringkat, Lencana, Profil
 ```
 
