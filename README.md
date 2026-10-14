@@ -20,7 +20,7 @@ Semua materi ada di `src/data/curriculum.js`. Guru bisa menambah atau mengubah s
 
 ## Cara memakai
 
-Langkah penggunaan untuk siswa (masuk, peta belajar, soal, XP dan streak, lencana) ada di [PANDUAN.md](PANDUAN.md) dan tampil juga di landing page pada bagian **Cara memakai Ngulik!**.
+Langkah penggunaan untuk siswa (masuk, peta belajar, soal, XP dan streak, lencana) ada di [PANDUAN.md](PANDUAN.md) dan tampil juga di halaman `/#/cara-pakai` (tautan "Lihat cara memakainya" di landing page).
 
 Screenshot panduan disimpan di `public/tutorial/` dengan nama `langkah-1-masuk.png` sampai `langkah-8-menu.png` (disarankan 1080 × 1920 px, PNG). Teks langkah ada di `src/data/tutorial.js`. Daftar lengkap file dan keterangan gambar ada di PANDUAN.md.
 

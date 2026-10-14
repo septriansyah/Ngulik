@@ -361,6 +361,7 @@ pre.code.small { font-size: 13px; padding: 10px 12px; }
 .final p { color: var(--muted); margin: 0 0 18px; font-size: 18px; }
 .lfoot { text-align: center; color: var(--muted); font-size: 13px; padding: 30px 20px 40px; border-top: 2px solid var(--line); margin-top: 30px; }
 
+.howto-head h1 { font-family: var(--display); font-size: clamp(34px, 5vw, 52px); line-height: 1.02; margin: 0 0 8px; }
 .tut-link { display: inline-block; margin-top: 14px; font-weight: 700; color: var(--brand-deep); text-decoration: none; border-bottom: 2px solid var(--accent); }
 .tut { list-style: none; counter-reset: t; padding: 0; margin: 26px 0 0; display: grid; gap: 22px; }
 .tut li { counter-increment: t; display: grid; grid-template-columns: 1fr 240px; gap: 28px; align-items: center; background: var(--surface); border: 2px solid var(--line); border-radius: 22px; padding: 22px; }

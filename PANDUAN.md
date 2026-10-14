@@ -1,6 +1,6 @@
 # Panduan Penggunaan Ngulik!
 
-Panduan singkat untuk siswa. Isi yang sama tampil di landing page, bagian **Cara memakai Ngulik!**.
+Panduan singkat untuk siswa. Isi yang sama tampil di halaman **Cara memakai Ngulik!** (`/#/cara-pakai`), yang dibuka lewat tautan "Lihat cara memakainya" di landing page.
 
 > **Untuk pembuat panduan:** screenshot disimpan di folder `public/tutorial/` dengan nama file persis seperti di bawah. Ukuran disarankan 1080 × 1920 px (rasio 9:16, tampilan HP), format PNG. Selama file belum ada, landing page menampilkan kotak penanda berisi nama file yang dibutuhkan.
 
@@ -87,7 +87,7 @@ Panduan singkat untuk siswa. Isi yang sama tampil di landing page, bagian **Cara
 
 ![Tombol Panduan di peta](public/tutorial/langkah-7-panduan.png)
 
-*Gambar 7. Tombol "Panduan" pada kepala unit di peta dan halaman ringkasan materinya.*
+*Gambar 7. Halaman Panduan Unit 1: tujuan unit dan ringkasan materi tanpa soal (dibuka lewat tombol "Panduan" di peta).*
 
 Ketuk **Panduan** di kepala tiap unit pada peta untuk membaca ringkasan materi tanpa soal.
 
@@ -97,7 +97,7 @@ Ketuk **Panduan** di kepala tiap unit pada peta untuk membaca ringkasan materi t
 
 ![Menu bawah](public/tutorial/langkah-8-menu.png)
 
-*Gambar 8. Menu bawah (Belajar, Peringkat, Lencana, Profil) dan salah satu halamannya.*
+*Gambar 8. Halaman Lencana dengan menu bawah (Belajar, Peringkat, Lencana, Profil).*
 
 - **Peringkat**: bandingkan XP dan streak dengan teman sekelas.
 - **Lencana**: 15 pencapaian yang bisa dikumpulkan.

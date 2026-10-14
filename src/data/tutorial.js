@@ -48,13 +48,13 @@ export const TUTORIAL = [
     img: 'langkah-7-panduan.png',
     title: 'Ulangi materi lewat Panduan',
     body: 'Lupa materinya? Ketuk tombol Panduan di tiap unit pada peta untuk membaca ringkasan tanpa soal.',
-    caption: 'Tombol "Panduan" pada kepala unit di peta dan halaman ringkasan materinya.',
+    caption: 'Halaman Panduan Unit 1: tujuan unit dan ringkasan materi tanpa soal (dibuka lewat tombol "Panduan" di peta).',
   },
   {
     id: 'menu',
     img: 'langkah-8-menu.png',
     title: 'Peringkat, Lencana, dan Profil',
     body: 'Menu bawah memuat Peringkat (bandingkan XP dan streak dengan teman), Lencana (15 pencapaian), dan Profil (ringkasan progres, masuk dengan Google, keluar, atau hapus progres).',
-    caption: 'Menu bawah (Belajar, Peringkat, Lencana, Profil) dan salah satu halamannya.',
+    caption: 'Halaman Lencana dengan menu bawah (Belajar, Peringkat, Lencana, Profil).',
   },
 ];
