@@ -1,16 +1,16 @@
 import { Link } from 'react-router-dom';
 import Tutorial from '../components/Tutorial.jsx';
 import Bito from '../components/Bito.jsx';
+import PublicNav from '../components/PublicNav.jsx';
 import { TUTORIAL } from '../data/tutorial.js';
 import { sfx } from '../lib/sound.js';
 
 export default function HowTo() {
   return (
     <div className="landing">
-      <header className="lnav">
-        <Link to="/" className="logo">Ngulik<span>!</span></Link>
-        <Link to="/" className="btn small ghost" onClick={() => sfx.tap()}>← Beranda</Link>
-      </header>
+      <PublicNav>
+        <Link to="/" className="btn small green" onClick={() => sfx.tap()}>Mulai</Link>
+      </PublicNav>
 
       <section className="lsec howto-head">
         <h1>Cara memakai Ngulik!</h1>
@@ -27,7 +27,7 @@ export default function HowTo() {
         </div>
       </section>
 
-      <footer className="lfoot">Ngulik! · Media pembelajaran algoritma dasar untuk Informatika SMP/MTs</footer>
+      <footer className="lfoot">Ngulik! · Media pembelajaran algoritma dasar untuk Informatika SMP/MTs · <Link to="/tentang">Tentang Ngulik!</Link></footer>
     </div>
   );
 }

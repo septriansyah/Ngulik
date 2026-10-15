@@ -12,6 +12,7 @@ import Badges from './pages/Badges.jsx';
 import Profile from './pages/Profile.jsx';
 import Office from './pages/Office.jsx';
 import HowTo from './pages/HowTo.jsx';
+import About from './pages/About.jsx';
 
 function Protected({ children, bare }) {
   const { user, loading } = useApp();
@@ -33,6 +34,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/cara-pakai" element={<HowTo />} />
+          <Route path="/tentang" element={<About />} />
           <Route path="/belajar" element={<Protected><Learn /></Protected>} />
           <Route path="/pelajaran/:key" element={<Protected bare><LessonRoute /></Protected>} />
           <Route path="/panduan/:unitId" element={<Protected bare><Guide /></Protected>} />

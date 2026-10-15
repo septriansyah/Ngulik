@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useApp } from '../context/AppContext.jsx';
 import { Google, Fire, Bolt, Medal, Check } from '../components/Icons.jsx';
 import { SoundToggle } from '../components/Shell.jsx';
@@ -37,6 +38,7 @@ export default function Profile() {
 
       <div className="settings">
         <div className="srow"><span>Efek suara</span><SoundToggle /></div>
+        <Link className="srow linkish" to="/tentang">Tentang Ngulik!<span aria-hidden="true">→</span></Link>
         <button className="srow linkish" onClick={signOut}>Keluar</button>
         {!confirm
           ? <button className="srow linkish danger" onClick={() => setConfirm(true)}>Ulang progres dari awal</button>

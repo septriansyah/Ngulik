@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, Navigate } from 'react-router-dom';
 import { useApp } from '../context/AppContext.jsx';
 import Bito from '../components/Bito.jsx';
+import PublicNav from '../components/PublicNav.jsx';
 import BadgeIcon from '../components/BadgeIcon.jsx';
 import { Google, Fire, Bolt, Heart, Trophy, Book, Target } from '../components/Icons.jsx';
 import { UNITS, FLAT } from '../data/curriculum.js';
@@ -32,12 +33,11 @@ export default function Landing() {
 
   return (
     <div className="landing">
-      <header className="lnav">
-        <span className="logo">Ngulik<span>!</span></span>
+      <PublicNav>
         {firebaseReady
           ? <button className="btn small ghost" onClick={google}><Google /> Masuk</button>
           : <button className="btn small ghost" onClick={() => setGuestOpen(true)}>Mulai</button>}
-      </header>
+      </PublicNav>
 
       <section className="hero">
         <div className="hero-copy">
@@ -117,7 +117,7 @@ export default function Landing() {
         </div>
       </section>
 
-      <footer className="lfoot">Ngulik! · Media pembelajaran algoritma dasar untuk Informatika SMP/MTs</footer>
+      <footer className="lfoot">Ngulik! · Media pembelajaran algoritma dasar untuk Informatika SMP/MTs · <Link to="/tentang">Tentang Ngulik!</Link></footer>
 
       {guestOpen && (
         <div className="scrim" onClick={(e) => e.target === e.currentTarget && setGuestOpen(false)}>
